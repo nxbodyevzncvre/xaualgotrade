@@ -1,0 +1,285 @@
+{
+  "prereg": "R4-001; 12 interactions; causal daily macro; gaps logged",
+  "gaps": [
+    "H1 macro 2020-22: DATA GAP (daily used)",
+    "NASDAQ: DATA GAP",
+    "2Y: ^IRX proxy",
+    "Real: TIP proxy",
+    "CPI/NFP/FOMC: DATA GAP"
+  ],
+  "research": {
+    "MODEL_A_event_only": {
+      "sweep_high": {
+        "n": 634,
+        "exp_R": -0.192,
+        "ci": [
+          -0.282,
+          -0.098
+        ]
+      },
+      "breakout_up": {
+        "n": 1037,
+        "exp_R": 0.035,
+        "ci": [
+          -0.043,
+          0.112
+        ]
+      },
+      "failed_breakout": {
+        "n": 493,
+        "exp_R": -0.069,
+        "ci": [
+          -0.175,
+          0.045
+        ]
+      }
+    },
+    "MODEL_B_note": "event+vol in interactions via volhi filter below",
+    "breakout_up_x_DXY_ret1=-1": {
+      "n": 526,
+      "exp_R": -0.02,
+      "ci": [
+        -0.126,
+        0.088
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_DXY_trend50=-1": {
+      "n": 398,
+      "exp_R": 0.103,
+      "ci": [
+        -0.022,
+        0.226
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_Y10_ret1=-1": {
+      "n": 509,
+      "exp_R": 0.058,
+      "ci": [
+        -0.051,
+        0.17
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_Y10_ret5=-1": {
+      "n": 496,
+      "exp_R": 0.109,
+      "ci": [
+        -0.002,
+        0.232
+      ],
+      "p_prereg": 0.5
+    },
+    "sweep_high_x_DXY_ret1=1": {
+      "n": 303,
+      "exp_R": -0.34,
+      "ci": [
+        -0.457,
+        -0.215
+      ],
+      "p_prereg": 0.5
+    },
+    "sweep_high_x_Y10_ret1=1": {
+      "n": 301,
+      "exp_R": -0.295,
+      "ci": [
+        -0.418,
+        -0.166
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_VIX_pct252=hi": {
+      "n": 236,
+      "exp_R": 0.084,
+      "ci": [
+        -0.072,
+        0.261
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_SPX_ret1=1": {
+      "n": 586,
+      "exp_R": 0.033,
+      "ci": [
+        -0.069,
+        0.141
+      ],
+      "p_prereg": 0.5
+    },
+    "sweep_high_x_VIX_pct252=hi": {
+      "n": 151,
+      "exp_R": -0.216,
+      "ci": [
+        -0.398,
+        -0.027
+      ],
+      "p_prereg": 0.5
+    },
+    "failed_breakout_x_DXY_ret1=any": {
+      "n": 0,
+      "p_prereg": 1.0
+    },
+    "breakout_up_x_TIP_ret1=1": {
+      "n": 618,
+      "exp_R": 0.048,
+      "ci": [
+        -0.05,
+        0.153
+      ],
+      "p_prereg": 0.5
+    },
+    "breakout_up_x_OIL_ret1=1": {
+      "n": 579,
+      "exp_R": 0.024,
+      "ci": [
+        -0.088,
+        0.127
+      ],
+      "p_prereg": 0.5
+    },
+    "N_gain": {
+      "A_tr": {
+        "auc": 0.5289781319290539
+      },
+      "A_va": {
+        "auc": 0.5255133877173648,
+        "brier": 0.2354982353916319,
+        "logloss": 0.6638375496019436
+      },
+      "B_tr": {
+        "auc": 0.5296758992929973
+      },
+      "B_va": {
+        "auc": 0.5198614209102558,
+        "brier": 0.23591602961608116,
+        "logloss": 0.6646998638088721
+      }
+    }
+  },
+  "validation": {
+    "breakout_up_x_DXY_ret1=-1": {
+      "n": 169,
+      "exp_R": -0.18,
+      "ci": [
+        -0.354,
+        0.003
+      ]
+    },
+    "breakout_up_x_DXY_trend50=-1": {
+      "n": 159,
+      "exp_R": -0.207,
+      "ci": [
+        -0.383,
+        -0.028
+      ]
+    },
+    "breakout_up_x_Y10_ret1=-1": {
+      "n": 154,
+      "exp_R": -0.226,
+      "ci": [
+        -0.406,
+        -0.044
+      ]
+    },
+    "breakout_up_x_Y10_ret5=-1": {
+      "n": 150,
+      "exp_R": -0.108,
+      "ci": [
+        -0.305,
+        0.084
+      ]
+    },
+    "sweep_high_x_DXY_ret1=1": {
+      "n": 61,
+      "exp_R": -0.135,
+      "ci": [
+        -0.41,
+        0.151
+      ]
+    },
+    "sweep_high_x_Y10_ret1=1": {
+      "n": 72,
+      "exp_R": -0.172,
+      "ci": [
+        -0.416,
+        0.093
+      ]
+    },
+    "breakout_up_x_VIX_pct252=hi": {
+      "n": 0
+    },
+    "breakout_up_x_SPX_ret1=1": {
+      "n": 175,
+      "exp_R": -0.251,
+      "ci": [
+        -0.421,
+        -0.08
+      ]
+    },
+    "sweep_high_x_VIX_pct252=hi": {
+      "n": 0
+    },
+    "failed_breakout_x_DXY_ret1=any": {
+      "n": 0
+    },
+    "breakout_up_x_TIP_ret1=1": {
+      "n": 165,
+      "exp_R": -0.281,
+      "ci": [
+        -0.444,
+        -0.105
+      ]
+    },
+    "breakout_up_x_OIL_ret1=1": {
+      "n": 171,
+      "exp_R": -0.228,
+      "ci": [
+        -0.4,
+        -0.055
+      ]
+    },
+    "N_gain": {
+      "A_va": {
+        "auc": 0.5255133877173648,
+        "brier": 0.2354982353916319,
+        "logloss": 0.6638375496019436
+      },
+      "B_va": {
+        "auc": 0.5198614209102558,
+        "brier": 0.23591602961608116,
+        "logloss": 0.6646998638088721
+      }
+    }
+  },
+  "FDR": {
+    "p": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5
+    ],
+    "q": [
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      0.5454545454545454,
+      1.0,
+      0.5454545454545454,
+      0.5454545454545454
+    ]
+  }
+}

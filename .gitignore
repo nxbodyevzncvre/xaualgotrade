@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# Pytest / caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Large / regenerable data - excluded to stay within GitHub limits (100MB/file, ~5GB/repo)
+# Regenerate via data/download.py, data/download_duk.py, data/dl_tick.py
+data/raw/_tickcache/
+data/raw/_dukcache/
+data/raw/_tickagg/
+data/raw/XAUUSD_M1_dukascopy.csv
+data/raw/XAUUSD_M5_dukascopy.csv
+*.pkl
+*.parquet
+
+# venv already excluded above; keep small CSVs tracked, large M1/M5 excluded
+research_data/XAUUSD_M1_duk.csv
+research_data/XAUUSD_M5_duk.csv
+validation_data/XAUUSD_M1_duk.csv
+validation_data/XAUUSD_M5_duk.csv
+final_test_data/XAUUSD_M1_duk.csv
+final_test_data/XAUUSD_M5_duk.csv
+final_test_data/XAUUSD_M1_duk.csv

@@ -1,0 +1,13 @@
+{
+  "strategy_id": "FIB-H1-05-HIVOL-001",
+  "version": "1.0.0-frozen",
+  "frozen_note": "Frozen for blind-test demonstration only. Did NOT meet full section-27 bar (validation CI crosses 0, D1 fails, multiple-testing discount). Verdict capped at INSUFFICIENT EVIDENCE.",
+  "features": ["fractal swings k=2", "fib 0.5 fade", "ATR14 + percentile regime=high", "no ML"],
+  "parameters": {"fractal_k": 2, "atr_period": 14, "fib_level": 0.5, "fade_level": true, "use_trend_filter": false, "use_vol_filter": true, "vol_regime": "high", "sl_atr": 1.5, "tp_R": 2.0, "max_hold": 20},
+  "entry_rules": "After swing-pair confirmation, if close below 50% level fade short / above fade long at next bar; only when ATR-percentile regime high.",
+  "exit_rules": "SL 1.5xATR, TP 2R, time stop 20 bars, ambiguous same-bar SL/TP resolved to SL.",
+  "risk_model": "Fixed 1R per trade for statistics; no compounding in test.",
+  "costs": {"spread": 0.35, "slippage": 0.15},
+  "data_cutoff": "research+validation only; final_test_data locked until evaluation",
+  "code_version": "phase1 rerun + validation scripts"
+}

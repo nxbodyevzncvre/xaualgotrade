@@ -1,0 +1,288 @@
+{
+  "research": {
+    "res_breakout_up_x_DXY_ret1=-1": {
+      "n_filt": 526,
+      "n_base": 1037,
+      "mean_filt": -0.0202,
+      "ci95": [
+        -0.1341,
+        0.09
+      ],
+      "obs_diff": -0.0552,
+      "perm_p": 0.4188
+    },
+    "res_breakout_up_x_DXY_trend50=-1": {
+      "n_filt": 398,
+      "n_base": 1037,
+      "mean_filt": 0.1034,
+      "ci95": [
+        -0.026,
+        0.23
+      ],
+      "obs_diff": 0.0684,
+      "perm_p": 0.3643
+    },
+    "res_breakout_up_x_Y10_ret1=-1": {
+      "n_filt": 509,
+      "n_base": 1037,
+      "mean_filt": 0.0578,
+      "ci95": [
+        -0.0585,
+        0.1727
+      ],
+      "obs_diff": 0.0228,
+      "perm_p": 0.7676
+    },
+    "res_breakout_up_x_Y10_ret5=-1": {
+      "n_filt": 496,
+      "n_base": 1037,
+      "mean_filt": 0.1089,
+      "ci95": [
+        -0.0063,
+        0.2235
+      ],
+      "obs_diff": 0.074,
+      "perm_p": 0.3073
+    },
+    "res_sweep_high_x_DXY_ret1=1": {
+      "n_filt": 303,
+      "n_base": 634,
+      "mean_filt": -0.3403,
+      "ci95": [
+        -0.4613,
+        -0.2133
+      ],
+      "obs_diff": -0.1478,
+      "perm_p": 0.074
+    },
+    "res_sweep_high_x_Y10_ret1=1": {
+      "n_filt": 301,
+      "n_base": 634,
+      "mean_filt": -0.2945,
+      "ci95": [
+        -0.4172,
+        -0.1633
+      ],
+      "obs_diff": -0.1021,
+      "perm_p": 0.2194
+    },
+    "res_breakout_up_x_VIX_pct252=hi": {
+      "n_filt": 236,
+      "n_base": 1037,
+      "mean_filt": 0.0841,
+      "ci95": [
+        -0.0935,
+        0.2584
+      ],
+      "obs_diff": 0.0492,
+      "perm_p": 0.6107
+    },
+    "res_breakout_up_x_SPX_ret1=1": {
+      "n_filt": 586,
+      "n_base": 1037,
+      "mean_filt": 0.0335,
+      "ci95": [
+        -0.0716,
+        0.1381
+      ],
+      "obs_diff": -0.0015,
+      "perm_p": 0.9825
+    },
+    "res_sweep_high_x_VIX_pct252=hi": {
+      "n_filt": 151,
+      "n_base": 634,
+      "mean_filt": -0.2159,
+      "ci95": [
+        -0.3948,
+        -0.0288
+      ],
+      "obs_diff": -0.0234,
+      "perm_p": 0.8311
+    },
+    "res_failed_breakout_x_DXY_ret1=any": {
+      "n_filt": 0,
+      "n_base": 840,
+      "mean_filt": null,
+      "ci95": null,
+      "obs_diff": 0.0,
+      "perm_p": 1.0
+    },
+    "res_breakout_up_x_TIP_ret1=1": {
+      "n_filt": 618,
+      "n_base": 1037,
+      "mean_filt": 0.048,
+      "ci95": [
+        -0.052,
+        0.1504
+      ],
+      "obs_diff": 0.0131,
+      "perm_p": 0.8371
+    },
+    "res_breakout_up_x_OIL_ret1=1": {
+      "n_filt": 579,
+      "n_base": 1037,
+      "mean_filt": 0.0235,
+      "ci95": [
+        -0.0835,
+        0.1268
+      ],
+      "obs_diff": -0.0114,
+      "perm_p": 0.8681
+    }
+  },
+  "validation": {
+    "val_breakout_up_x_DXY_ret1=-1": {
+      "n_filt": 169,
+      "n_base": 300,
+      "mean_filt": -0.1797,
+      "ci95": [
+        -0.3687,
+        -0.0073
+      ],
+      "obs_diff": 0.0042,
+      "perm_p": 0.9705
+    },
+    "val_breakout_up_x_DXY_trend50=-1": {
+      "n_filt": 159,
+      "n_base": 300,
+      "mean_filt": -0.2067,
+      "ci95": [
+        -0.3828,
+        -0.0264
+      ],
+      "obs_diff": -0.0228,
+      "perm_p": 0.8496
+    },
+    "val_breakout_up_x_Y10_ret1=-1": {
+      "n_filt": 154,
+      "n_base": 300,
+      "mean_filt": -0.2257,
+      "ci95": [
+        -0.406,
+        -0.0354
+      ],
+      "obs_diff": -0.0418,
+      "perm_p": 0.7201
+    },
+    "val_breakout_up_x_Y10_ret5=-1": {
+      "n_filt": 150,
+      "n_base": 300,
+      "mean_filt": -0.1077,
+      "ci95": [
+        -0.2954,
+        0.0828
+      ],
+      "obs_diff": 0.0762,
+      "perm_p": 0.5407
+    },
+    "val_sweep_high_x_DXY_ret1=1": {
+      "n_filt": 61,
+      "n_base": 177,
+      "mean_filt": -0.1349,
+      "ci95": [
+        -0.4384,
+        0.1547
+      ],
+      "obs_diff": -0.0273,
+      "perm_p": 0.8866
+    },
+    "val_sweep_high_x_Y10_ret1=1": {
+      "n_filt": 72,
+      "n_base": 177,
+      "mean_filt": -0.1716,
+      "ci95": [
+        -0.4191,
+        0.0966
+      ],
+      "obs_diff": -0.064,
+      "perm_p": 0.6867
+    },
+    "val_breakout_up_x_VIX_pct252=hi": {
+      "n_filt": 0,
+      "n_base": 300,
+      "mean_filt": null,
+      "ci95": null,
+      "obs_diff": 0.0,
+      "perm_p": 1.0
+    },
+    "val_breakout_up_x_SPX_ret1=1": {
+      "n_filt": 175,
+      "n_base": 300,
+      "mean_filt": -0.2513,
+      "ci95": [
+        -0.4267,
+        -0.0807
+      ],
+      "obs_diff": -0.0674,
+      "perm_p": 0.5512
+    },
+    "val_sweep_high_x_VIX_pct252=hi": {
+      "n_filt": 0,
+      "n_base": 177,
+      "mean_filt": null,
+      "ci95": null,
+      "obs_diff": 0.0,
+      "perm_p": 1.0
+    },
+    "val_failed_breakout_x_DXY_ret1=any": {
+      "n_filt": 0,
+      "n_base": 265,
+      "mean_filt": null,
+      "ci95": null,
+      "obs_diff": 0.0,
+      "perm_p": 1.0
+    },
+    "val_breakout_up_x_TIP_ret1=1": {
+      "n_filt": 165,
+      "n_base": 300,
+      "mean_filt": -0.2813,
+      "ci95": [
+        -0.4456,
+        -0.0993
+      ],
+      "obs_diff": -0.0974,
+      "perm_p": 0.4068
+    },
+    "val_breakout_up_x_OIL_ret1=1": {
+      "n_filt": 171,
+      "n_base": 300,
+      "mean_filt": -0.2277,
+      "ci95": [
+        -0.398,
+        -0.05
+      ],
+      "obs_diff": -0.0438,
+      "perm_p": 0.6897
+    }
+  },
+  "FDR_real": {
+    "p": [
+      0.4188,
+      0.3643,
+      0.7676,
+      0.3073,
+      0.074,
+      0.2194,
+      0.6107,
+      0.9825,
+      0.8311,
+      1.0,
+      0.8371,
+      0.8681
+    ],
+    "q": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.8876,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

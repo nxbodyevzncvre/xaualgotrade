@@ -1,0 +1,23 @@
+{
+  "project": "quant-research-xauusd",
+  "version": "0.1.0",
+  "seed": 42,
+  "timezone": "UTC",
+  "symbol_primary": "XAUUSD",
+  "symbols": ["XAUUSD"],
+  "yahoo_map": {"XAUUSD": "GC=F"},
+  "timeframes": ["M5", "M15", "M30", "H1", "H4", "D1"],
+  "focus_timeframes_phase1": ["H1", "H4", "D1"],
+  "data_split": {"research": 0.7, "validation": 0.15, "final": 0.15, "chronological": true},
+  "costs": {
+    "spread_xauusd": 0.35,
+    "slippage": 0.15,
+    "commission_per_trade": 0.0,
+    "sweeps": {"spread_mult": [1.0, 2.0, 3.0], "slippage_mult": [1.0, 2.0]}
+  },
+  "fib_levels": [0.236, 0.382, 0.5, 0.618, 0.786],
+  "fib_extensions": [1.272, 1.618, 2.618],
+  "swing": {"fractal_k": 2, "atr_period": 14, "zigzag_pct": 0.005},
+  "reaction": {"tolerance_atr": 0.25, "forward_bars": 10, "reversal_atr": 0.25},
+  "risk": {"sl_atr": 1.5, "tp_R": 2.0, "max_hold_bars": 20}
+}

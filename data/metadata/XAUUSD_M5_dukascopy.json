@@ -1,0 +1,12 @@
+{
+  "symbol": "XAUUSD",
+  "timeframe": "M5",
+  "source": "dukascopy",
+  "download_ts": "2026-09-28T20:07:05Z",
+  "rows": 478140,
+  "start": "2020-01-01 23:00:00+00:00",
+  "end": "2026-09-28 20:00:00+00:00",
+  "instrument": "xau/usd",
+  "offer": "bid",
+  "native": "M5"
+}

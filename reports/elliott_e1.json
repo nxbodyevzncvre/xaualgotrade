@@ -1,0 +1,107 @@
+{
+  "E_IMP_D1": {
+    "n_impulses": 61,
+    "n_abc": 793,
+    "n_triangles": 6,
+    "ext_w1": 6,
+    "truncated": 0,
+    "overlap": 32
+  },
+  "E_CONT_D1": {
+    "exp_R": 0.21307240543580405,
+    "ci_lo": -0.15759809095992908,
+    "ci_hi": 0.5609204924927593,
+    "n": 61,
+    "win_rate": 0.4098360655737705,
+    "avg_win": 1.924222794708013,
+    "avg_loss": -0.97522647600323,
+    "profit_factor": 1.370210779279455,
+    "median": -1.0
+  },
+  "E_SURR_D1": {
+    "real": 61,
+    "surr_counts": [
+      5,
+      3,
+      7,
+      6,
+      7
+    ],
+    "surr_mean": 5.6,
+    "enrichment": 10.892857142857144
+  },
+  "E_ABC_D1": {
+    "exp_R": 0.052113953860979584,
+    "ci_lo": -0.042690810174998664,
+    "ci_hi": 0.15244232485753373,
+    "n": 792
+  },
+  "E_FIB_D1": {
+    "w2_near_grid": 0.29508196721311475,
+    "chance": 0.3,
+    "w4_near_grid": 0.4426229508196721,
+    "ks_w2_p": 0.15725324451660883,
+    "ext_hit_162_200_262": 0.11475409836065574,
+    "alternation_corr": -0.19376859652043252,
+    "alternation_p": 0.1365,
+    "n": 61
+  },
+  "E_IMP_H1": {
+    "n_impulses": 66,
+    "n_abc": 986,
+    "n_triangles": 3,
+    "ext_w1": 4,
+    "truncated": 0,
+    "overlap": 44
+  },
+  "E_CONT_H1": {
+    "exp_R": 0.2975513121900707,
+    "ci_lo": -0.019974572662711295,
+    "ci_hi": 0.6181420980611132,
+    "n": 66,
+    "win_rate": 0.48484848484848486,
+    "avg_win": 1.548072640548825,
+    "avg_loss": -0.8794099380299333,
+    "profit_factor": 1.656803591860659,
+    "median": -0.07849039267215079
+  },
+  "E_SURR_H1": {
+    "real": 66,
+    "surr_counts": [
+      6,
+      15,
+      5,
+      5,
+      7
+    ],
+    "surr_mean": 7.6,
+    "enrichment": 8.68421052631579
+  },
+  "E_ABC_H1": {
+    "exp_R": 0.039578985773636596,
+    "ci_lo": -0.04342203481602466,
+    "ci_hi": 0.11803010422168832,
+    "n": 986
+  },
+  "E_FIB_H1": {
+    "w2_near_grid": 0.30303030303030304,
+    "chance": 0.3,
+    "w4_near_grid": 0.3939393939393939,
+    "ks_w2_p": 0.00010477653963453981,
+    "ext_hit_162_200_262": 0.09090909090909091,
+    "alternation_corr": -0.14233960697692966,
+    "alternation_p": 0.254,
+    "n": 66
+  },
+  "E_CLASSIFIER_in_sample_AUC": 0.5486564996368919,
+  "E_CLASSIFIER_val_AUC": 0.5490196078431372,
+  "NOT_RELIABLE": [
+    "barrier_triangle",
+    "expanding_triangle",
+    "running_triangle",
+    "double_three",
+    "triple_three",
+    "w_x_y_x_z",
+    "leading_diagonal_vs_ending"
+  ]
+}

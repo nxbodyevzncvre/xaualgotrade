@@ -1,0 +1,37 @@
+{
+  "F3_HF": {
+    "n": 5724,
+    "unmapped": 4,
+    "P_1R_before_1R": 0.5005,
+    "MFE_med": 2.386,
+    "MAE_med": -2.324
+  },
+  "F3_LF": {
+    "n": 5864,
+    "unmapped": 0,
+    "P_1R_before_1R": 0.4899,
+    "MFE_med": 2.371,
+    "MAE_med": -2.36
+  },
+  "F5_DN": {
+    "n": 5658,
+    "unmapped": 0,
+    "P_1R_before_1R": 0.511,
+    "MFE_med": 2.399,
+    "MAE_med": -2.356
+  },
+  "F5_UP": {
+    "n": 5643,
+    "unmapped": 3,
+    "P_1R_before_1R": 0.4996,
+    "MFE_med": 2.347,
+    "MAE_med": -2.34
+  },
+  "RAND": {
+    "n": 2898,
+    "unmapped": 1,
+    "P_1R_before_1R": 0.511,
+    "MFE_med": 2.381,
+    "MAE_med": -2.347
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "prereg": "E2-ABFG-001 fixed SL1.5/TP2R/20; family=FDR; E1 untouched; no final OOS",
+  "research": {
+    "A_diag_D1": {
+      "n_diag": 12,
+      "n_conv": 6,
+      "diag_rev": {
+        "exp_R": 0.25,
+        "ci_lo": -0.5,
+        "ci_hi": 1.0,
+        "n": 12
+      },
+      "conv_cont": {
+        "exp_R": 0.4306062651470812,
+        "ci_lo": -0.5693937348529188,
+        "ci_hi": 1.5,
+        "n": 6
+      },
+      "winrate_test_p": 0.7373156772164182
+    },
+    "B_tri_D1": {
+      "contracting": {
+        "n": 4,
+        "tested": 4,
+        "dir_accuracy": 0.25,
+        "median_mag_ATR": 2.9560074362576616
+      },
+      "barrier": {
+        "n": 24,
+        "tested": 22,
+        "dir_accuracy": 0.7272727272727273,
+        "median_mag_ATR": 1.8181945458334137
+      },
+      "expanding": {
+        "n": 2,
+        "tested": 2,
+        "dir_accuracy": 0.0,
+        "median_mag_ATR": 3.496371868977474
+      },
+      "running_suspect": {
+        "n": 119,
+        "tested": 92,
+        "dir_accuracy": 0.6847826086956522,
+        "median_mag_ATR": 3.0160443109102686
+      }
+    },
+    "F_partial_D1": {
+      "1-2": {
+        "n": 510,
+        "median_abs5b_ATR": 1.3258215215526254
+      },
+      "A-B": {
+        "n": 793,
+        "median_abs5b_ATR": 1.3385907305421676
+      },
+      "1-2-3start": {
+        "n": 793,
+        "median_abs5b_ATR": 1.3385907305421676
+      },
+      "tri-A-B-C-D": {
+        "n": 625,
+        "median_abs5b_ATR": 1.3750934646495925
+      }
+    },
+    "G_inv_D1": {
+      "elliott_rev": 0.39361702127659576,
+      "elliott_n": 1222,
+      "generic_rev": 0.39419475655430714,
+      "generic_n": 1068,
+      "p": 0.9774808368467707
+    },
+    "A_diag_H1": {
+      "n_diag": 13,
+      "n_conv": 3,
+      "diag_rev": {
+        "exp_R": -0.3941034313938505,
+        "ci_lo": -0.9074523590301609,
+        "ci_hi": 0.2574670860418515,
+        "n": 13
+      },
+      "conv_cont": {
+        "exp_R": -0.47887341079881046,
+        "ci_lo": -1.0,
+        "ci_hi": 0.5633797676035684,
+        "n": 3
+      },
+      "winrate_test_p": 1.0
+    },
+    "B_tri_H1": {
+      "contracting": {
+        "n": 1,
+        "tested": 1,
+        "dir_accuracy": 0.0,
+        "median_mag_ATR": 1.3716054321333866
+      },
+      "barrier": {
+        "n": 52,
+        "tested": 46,
+        "dir_accuracy": 0.7391304347826086,
+        "median_mag_ATR": 0.9274110157802506
+      },
+      "expanding": {
+        "n": 8,
+        "tested": 5,
+        "dir_accuracy": 1.0,
+        "median_mag_ATR": 2.3454442263729782
+      },
+      "running_suspect": {
+        "n": 102,
+        "tested": 67,
+        "dir_accuracy": 0.7910447761194029,
+        "median_mag_ATR": 2.4580722720709574
+      }
+    },
+    "F_partial_H1": {
+      "1-2": {
+        "n": 649,
+        "median_abs5b_ATR": 0.8267513079342212
+      },
+      "A-B": {
+        "n": 986,
+        "median_abs5b_ATR": 0.7923088650301202
+      },
+      "1-2-3start": {
+        "n": 986,
+        "median_abs5b_ATR": 0.7923088650301202
+      },
+      "tri-A-B-C-D": {
+        "n": 749,
+        "median_abs5b_ATR": 0.8123154562960667
+      }
+    },
+    "G_inv_H1": {
+      "elliott_rev": 0.3379721669980119,
+      "elliott_n": 1509,
+      "generic_rev": 0.35363321799307956,
+      "generic_n": 1445,
+      "p": 0.3923523228363104
+    }
+  },
+  "validation": {
+    "A_diag_D1": {
+      "exp_R": -1.0,
+      "ci_lo": -1.0,
+      "ci_hi": -1.0,
+      "n": 1
+    },
+    "G_inv_D1": {
+      "rev_rate": 0.4,
+      "n": 65
+    },
+    "P_base_trend_D1": {
+      "exp_R": -0.1524278372421668,
+      "n": 126
+    },
+    "P_base_breakout_D1": {
+      "exp_R": -0.3012630524992841,
+      "n": 47
+    },
+    "A_diag_H1": {
+      "exp_R": -0.6257252729192865,
+      "ci_lo": -1.0,
+      "ci_hi": -0.25145054583857296,
+      "n": 2
+    },
+    "G_inv_H1": {
+      "rev_rate": 0.3627450980392157,
+      "n": 306
+    },
+    "P_base_trend_H1": {
+      "exp_R": -0.027405915448663748,
+      "n": 677
+    },
+    "P_base_breakout_H1": {
+      "exp_R": 0.1381998131529119,
+      "n": 359
+    }
+  },
+  "E2-Q_multiple_testing": {
+    "family_p": [
+      0.7373156772164182,
+      0.9774808368467707,
+      1.0,
+      0.3923523228363104
+    ],
+    "q_fdr": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_tests": 4
+  }
+}

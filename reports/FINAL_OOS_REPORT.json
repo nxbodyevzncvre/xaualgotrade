@@ -1,0 +1,19 @@
+{
+  "strategy": "FIB-H1-05-HIVOL-001",
+  "n_trades": 104,
+  "expectancy": {
+    "exp_R": -0.1693699960923712,
+    "ci_lo": -0.37429919287255403,
+    "ci_hi": 0.05089929661808096,
+    "n": 104
+  },
+  "stats": {
+    "n": 104,
+    "win_rate": 0.33653846153846156,
+    "avg_win": 1.218504339876837,
+    "avg_loss": -0.8733642244825492,
+    "profit_factor": 0.7077023470911349,
+    "median": -1.0
+  },
+  "note": "FINAL OOS. Do not use to modify strategy."
+}

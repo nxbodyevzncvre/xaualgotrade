@@ -1,0 +1,12 @@
+{
+  "symbol": "XAUUSD",
+  "timeframe": "D1",
+  "source": "yahoo",
+  "download_ts": "2026-09-28T19:33:49Z",
+  "rows": 6544,
+  "start": "2000-08-30 00:00:00+00:00",
+  "end": "2026-09-28 00:00:00+00:00",
+  "ticker": "GC=F",
+  "period": "max",
+  "interval": "1d"
+}
