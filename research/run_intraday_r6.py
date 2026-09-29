@@ -106,8 +106,11 @@ def detect(m5):
     return ev
 
 
-def backtest(m5, sig, spread_m5, spread_fallback, cost_mult=1.0):
-    """Fixed-R intraday backtest. Entry = open of bar after signal; flat 21:00 UTC."""
+def backtest(m5, sig, spread_m5, spread_fallback, cost_mult=1.0,
+             sl_atr=SL_ATR, tp_r=TP_R, max_hold=MAX_HOLD, flat_hour=21,
+             entry_lo=7.0, entry_hi=19.0):
+    """Fixed-R intraday backtest. Entry = open of bar after signal; flat flat_hour UTC.
+    Defaults reproduce Round-1 exec exactly (Round 1 frozen); Round 2 passes overrides."""
     px = m5.set_index("timestamp")
     sp = None
     if spread_m5 is not None:
@@ -125,12 +128,12 @@ def backtest(m5, sig, spread_m5, spread_fallback, cost_mult=1.0):
         d = int(s.direction)
         e = i + 1
         hr_e = ts[e].hour + ts[e].minute / 60
-        if hr_e < 7 or hr_e >= 19 or not np.isfinite(atr[e]) or atr[e] <= 0:
+        if hr_e < entry_lo or hr_e >= entry_hi or not np.isfinite(atr[e]) or atr[e] <= 0:
             continue
         entry = opens[e]
-        risk = SL_ATR * atr[e]
+        risk = sl_atr * atr[e]
         sl = entry - d * risk
-        tp = entry + d * TP_R * risk
+        tp = entry + d * tp_r * risk
         entry_date = ts[e].date()
         res = None
         exit_px, se, sx = entry, np.nan, np.nan
@@ -139,8 +142,8 @@ def backtest(m5, sig, spread_m5, spread_fallback, cost_mult=1.0):
                 se = float(sp.loc[ts[e].floor("5min")])
             except KeyError:
                 se = np.nan
-        for k in range(e, min(e + MAX_HOLD, len(m5))):
-            if ts[k].date() != entry_date or (ts[k].hour >= 21):
+        for k in range(e, min(e + max_hold, len(m5))):
+            if ts[k].date() != entry_date or (ts[k].hour >= flat_hour):
                 res = d * (closes[k] - entry) / risk
                 exit_px = closes[k]
                 break
@@ -150,17 +153,17 @@ def backtest(m5, sig, spread_m5, spread_fallback, cost_mult=1.0):
                 res, exit_px = -1.0, sl
                 break
             if hit_tp:
-                res, exit_px = TP_R, tp
+                res, exit_px = tp_r, tp
                 break
             if hit_sl:
                 res, exit_px = -1.0, sl
                 break
         if res is None:
-            j = min(e + MAX_HOLD - 1, len(m5) - 1)
+            j = min(e + max_hold - 1, len(m5) - 1)
             res, exit_px = d * (closes[j] - entry) / risk, closes[j]
         if sp is not None:
             try:
-                sx = float(sp.loc[ts[min(e + MAX_HOLD - 1, len(m5) - 1)].floor("5min")])
+                sx = float(sp.loc[ts[min(e + max_hold - 1, len(m5) - 1)].floor("5min")])
             except KeyError:
                 sx = np.nan
         se = se if np.isfinite(se) else spread_fallback
