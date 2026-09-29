@@ -216,9 +216,9 @@ def main():
         mk = mm[cell].fillna(False).values
         # B1: causal next-bar convention — state at t, move t->t+1 — shared by
         # gross, mid, artifact AND net (net loop below uses the same mk[:-1]).
-        assert len(mk) == len(m), "mask/frame length mismatch (validation)"
-        gb = m.bid_next.values[:-1]
-        gm = m.mid_next.values[:-1]
+        assert len(mk) == len(m5), "mask/frame length mismatch (validation)"
+        gb = m5.bid_next.values[:-1]
+        gm = m5.mid_next.values[:-1]
         k = mk[:-1]
         g_raw, m_raw = gb[k], gm[k]
         # B2: single joint finite mask -> timestamp-paired d_i = bid_ret_i - mid_ret_i
@@ -236,9 +236,9 @@ def main():
         if cell in DIR6:
             # net fade: fade UP* -> short(-1); fade DN* -> long(+1)
             direction = FADE_DIR[cell]
-            ce = m.close.values[:-1][k]; cx = m.close.values[1:][k]
-            se = m.spread.values[:-1][k]; sx = m.spread.values[1:][k]
-            ae = m.atr14.values[:-1][k]
+            ce = m5.close.values[:-1][k]; cx = m5.close.values[1:][k]
+            se = m5.spread.values[:-1][k]; sx = m5.spread.values[1:][k]
+            ae = m5.atr14.values[:-1][k]
             ok = np.isfinite(ce) & np.isfinite(cx) & np.isfinite(se) & np.isfinite(sx) & np.isfinite(ae) & (ae > 0)
             net_usd = direction*(cx[ok]-ce[ok])-(se[ok]+sx[ok])/2
             net_atr = net_usd/ae[ok]
@@ -252,8 +252,8 @@ def main():
             # NEU: no fade direction (prereg); enters the SAME 7-cell BH family via a
             # return-vector permutation p (mid next-ret NEU vs rest). Uses the
             # prereg-specified permutation_diff_p (B=2000, seed 0).
-            x1 = m.mid_next.values[:-1][k]
-            x0 = m.mid_next.values[:-1][~mk[:-1]]
+            x1 = m5.mid_next.values[:-1][k]
+            x0 = m5.mid_next.values[:-1][~mk[:-1]]
             p_neu, _ = permutation_diff_p(x1, x0)
             out["net"][cell] = {"n": None, "mean_usd": None, "mean_atr": None,
                                 "ci95": [None, None], "p": round(float(p_neu), 4),
